@@ -58,6 +58,10 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jdk.source>1.7</jdk.source>
+        <jdk.target>1.7</jdk.target>
+        <jdk.debug>true</jdk.debug>
+        <jdk.optimize>false</jdk.optimize>
     </properties>
 
     <issueManagement>
@@ -113,5 +117,21 @@
         </pluginRepository>
     </pluginRepositories>
 
-
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven-compiler-plugin.version}</version>
+                    <configuration>
+                        <source>${jdk.source}</source>
+                        <target>${jdk.target}</target>
+                        <debug>${jdk.debug}</debug>
+                        <optimize>${jdk.optimize}</optimize>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
