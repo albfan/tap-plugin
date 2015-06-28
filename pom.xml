@@ -37,7 +37,7 @@
     <groupId>org.tap4j</groupId>
     <artifactId>tap</artifactId>
     <name>Jenkins TAP Plugin</name>
-    <version>1.23-SNAPSHOT</version>
+    <version>1.22.1-SNAPSHOT</version>
     <packaging>hpi</packaging>
 
     <licenses>
@@ -72,7 +72,7 @@
         </repository>
     </distributionManagement>
 
-        <developers>
+    <developers>
         <developer>
             <id>kinow</id>
             <name>Bruno P. Kinoshita</name>
@@ -87,9 +87,9 @@
     <scm>
         <connection>scm:git:git://github.com/jenkinsci/tap-plugin.git</connection>
         <developerConnection>scm:git:git@github.com:jenkinsci/tap-plugin.git</developerConnection>
-        <url>http://github.com/jenkinsci/tap-plugin</url>
-      <tag>HEAD</tag>
-  </scm>
+        <url>http://github.com/albfan/tap-plugin</url>
+        <tag>1.22-BF</tag>
+    </scm>
 
     <dependencies>
         <dependency>
